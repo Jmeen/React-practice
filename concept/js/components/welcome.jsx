@@ -42,7 +42,7 @@ class Welcome extends React.Component{
           return { color: nextProps.color };  //  변경된 state 리턴
       }
 
-      //  변경 사항이 없을 때
+      //  변경 사항이 없을 때g
       return null;
   }
 
@@ -95,7 +95,7 @@ class Welcome extends React.Component{
           console.log("업데이트 되기 전의 snapshot:", snapshot);
       }
   }
-  
+
   render(){
     //JSX 리턴
     console.log("render Props:",this.props);
