@@ -13,15 +13,29 @@
   <div>
     <button id="VJS-button">Click Me(VJS)</button>
   </div>
+
+  <!-- 1. 컴포넌트를 탑재할 영역 -->
+  <h1>react</h1>
+  <div id="root"></div>
 </body>
 <script>
   window.addEventListener('load', () => {
     //jvs 버튼 검색
-    const button = document.querySelector("#VJS-button");
+    const button = document.querySelector("#VJS-button")
+
+    ;
     button.addEventListener('click', event => {
       alert(event.target.innerText);
     })
   })
 </script>
+<!-- 2. react Libraty Script -->
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
+<!-- 3. babel 번역기 페이지에 포함 -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel" src="./js/index.js"></script>
+</script>
 </html>
