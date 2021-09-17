@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Practice</title>
+</head>
+
+<body>
+  <h1>VJS</h1>
+  <div>
+    <button id="VJS-button">Click Me(VJS)</button>
+  </div>
+</body>
+<script>
+  window.addEventListener('load', () => {
+    //jvs 버튼 검색
+    const button = document.querySelector("#VJS-button");
+    button.addEventListener('click', event => {
+      alert(event.target.innerText)
+    })
+  })
+</script>
+
+</html>
