@@ -45,4 +45,12 @@ class PropClass extends Component {
   }
 }
 
+// 객체로 props를 전달할 때, 객체의 내부 필드 타입을 지정할 수 있다.
+PropClass.propTypes = {
+  prop_obj: PropTypes.shape({
+    name: PropTypes.string,
+    age: PropTypes.number,
+  }),
+};
+
 export default PropClass;
